@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/usbFragment">
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.test.biz.pages.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/deviceFragment"
+        android:name="com.example.test.biz.pages.device.DeviceFragment"
+        android:label="FragmentA"
+        tools:layout="@layout/fragment_device" />
+
+    <fragment
+        android:id="@+id/usbFragment"
+        android:name="com.example.test.biz.pages.usb.UsbFragment"
+        android:label="FragmentB"
+        tools:layout="@layout/fragment_usb" />
+    <fragment
+        android:id="@+id/usbListFragment"
+        android:name="com.example.test.biz.pages.usb.UsbListFragment"
+        android:label="FragmentB"
+        tools:layout="@layout/fragment_usb_list" />
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.test.FragmentC"
+        android:label="FragmentC"
+        tools:layout="@layout/fragment_c" />
+
+
+</navigation>
